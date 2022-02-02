@@ -1,7 +1,6 @@
 .header {
   width: 100%;
   padding: 4%;
-  font-family: Inter, Arial, sans-serif;
   font-size: 16px;
   line-height: 19px;
   display: flex;
@@ -37,15 +36,8 @@
 }
 
 .header__link-button {
-  color: $white;
-  background-color: $link-color;
-  padding: 10px 15px;
-  text-align: center;
+  @extend %button-style;
   width: 120px;
-  border-radius: 4px;
-  &:hover {
-    background-color: rgba($link-color, 0.8);
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -57,7 +49,16 @@
 
 @media (min-width: $desktop-width) {
   .header {
-    padding: 3% 8%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 0;
+    padding-right: 0;
+    }
+
+    .header__link {
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 19px;
   }
 
   .header__list {
