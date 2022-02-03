@@ -8,3 +8,17 @@
     background-color: rgba($link-color, 0.8);
   }
 }
+.container {
+  padding-left: 4%;
+  padding-right: 4%;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+}

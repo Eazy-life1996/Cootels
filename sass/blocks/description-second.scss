@@ -1,5 +1,6 @@
 .description-second {
-  padding: 5% 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   display: flex;
   flex-direction: column;
 }
@@ -62,8 +63,6 @@
 
 @media (min-width: $desktop-width) {
   .description-second {
-    padding-left: 0;
-    padding-right: 0;
     column-gap: 10%;
   }
 
@@ -75,10 +74,10 @@
     font-weight: 600;
     font-size: 36px;
     line-height: 150%;
-    padding-right: 5%;
   }
 
   .description-second__p {
-    padding-right: 25%;
+    padding-right: 15%;
+    font-size: 18px;
   }
 }
