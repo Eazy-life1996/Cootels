@@ -71,14 +71,14 @@ ul {
   font-style: normal;
   font-display: swap;
 }
-.gallery__link, .description-second__link, .description__link, .header__link-button {
+.contacts__link, .gallery__link, .description-second__link, .description__link, .header__link-button {
   color: #ffffff;
   background-color: #0E1734;
   padding: 10px 15px;
   text-align: center;
   border-radius: 4px;
 }
-.gallery__link:hover, .description-second__link:hover, .description__link:hover, .header__link-button:hover {
+.contacts__link:hover, .gallery__link:hover, .description-second__link:hover, .description__link:hover, .header__link-button:hover {
   background-color: rgba(14, 23, 52, 0.8);
 }
 
@@ -531,6 +531,7 @@ ul {
   line-height: 150%;
   color: #424F7B;
   margin-bottom: 15px;
+  width: 130px;
 }
 .gallery__link-second:hover {
   text-decoration: underline;
@@ -589,5 +590,210 @@ ul {
 
   .gallery__description {
     font-size: 17px;
+  }
+}
+.contacts {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.contacts__subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #424F7B;
+}
+
+.contacts__title {
+  color: #192252;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 150%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.contacts__p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #848FAC;
+  margin-bottom: 15px;
+}
+
+.contacts__block-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contacts__link-second {
+  color: #000000;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+.contacts__link-second:hover {
+  background-color: rgba(14, 23, 52, 0.3);
+}
+
+.contacts__list {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.contacts__p-list {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #848FAC;
+  margin-top: 24px;
+}
+
+.contacts__d {
+  padding: 20px 25px;
+  -webkit-box-shadow: 0 0 18px #D9DBDE;
+          box-shadow: 0 0 18px #D9DBDE;
+  margin-top: 25px;
+  position: relative;
+}
+
+summary {
+  list-style: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  color: #424F7B;
+}
+
+summary::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #FFECE2;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+
+summary::before {
+  content: url(/image/arrow-down.svg);
+  width: 14px;
+  height: 8px;
+  position: absolute;
+  z-index: 1;
+  right: 30px;
+  top: 20px;
+}
+
+.contacts__d[open] summary::after {
+  background-color: #FF620A;
+}
+
+.contacts__d[open] summary::before {
+  content: url(/image/arrow-up.svg);
+  top: 18px;
+}
+
+@media (min-width: 660px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 3%;
+  }
+
+  .contacts__block-inner {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+
+  .contacts__block {
+    -webkit-box-flex: 47%;
+        -ms-flex: 47%;
+            flex: 47%;
+  }
+
+  .contacts__list {
+    padding: 0;
+  }
+}
+@media (min-width: 1320px) {
+  .contacts {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 7%;
+    padding-bottom: 7%;
+  }
+
+  .contacts__block-inner {
+    gap: 15px;
+  }
+
+  .contacts__link {
+    width: 146px;
+  }
+
+  .contacts__d {
+    padding: 32px 36px;
+  }
+
+  .contacts__subtitle {
+    font-size: 16px;
+  }
+
+  .contacts__p {
+    font-size: 18px;
+    padding-right: 15%;
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
+
+  .contacts__p-list {
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  .contacts__title {
+    font-size: 36px;
+  }
+
+  .contacts__block {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 588px;
+  }
+
+  .contacts__block:first-child {
+    width: 420px;
+  }
+
+  summary {
+    font-size: 22px;
+  }
+
+  summary::after {
+    width: 40px;
+    height: 40px;
+    top: 25px;
+  }
+
+  summary::before {
+    right: 35px;
+    top: 28px;
+  }
+
+  .contacts__d[open] summary::before {
+    top: 25px;
   }
 }
