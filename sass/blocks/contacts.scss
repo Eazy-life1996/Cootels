@@ -87,7 +87,7 @@ summary::after {
 }
 
 summary::before {
-  content: url(/image/arrow-down.svg);
+  content: url(../image/arrow-down.svg);
   width: 14px;
   height: 8px;
   position: absolute;
@@ -101,7 +101,7 @@ summary::before {
 }
 
 .contacts__d[open] summary::before {
-  content: url(/image/arrow-up.svg);
+  content: url(../image/arrow-up.svg);
   top: 18px;
 }
 
