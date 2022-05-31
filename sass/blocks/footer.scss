@@ -59,8 +59,9 @@
   text-decoration: underline;
 }
 
-.footer__svg path:hover {
+.footer__link-svg:hover path {
   fill: $circle-second;
+  stroke: $circle-second;
 }
 
 .footer__link:nth-child(2) {
@@ -70,6 +71,10 @@
 .footer__item {
   margin-bottom: 24px;
   text-align: center;
+}
+
+.footer__list--open {
+  display: block;
 }
 
 .footer__list {
